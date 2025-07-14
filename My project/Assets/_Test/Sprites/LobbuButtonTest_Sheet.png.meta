@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: a0a97e12db808ca45bc73a1abe7f8f35
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5202916320218799741
+    second: LobbuButtonTest_Sheet 1_0
+  - first:
+      213: -4769203430080102039
+    second: LobbuButtonTest_Sheet 1_1
+  - first:
+      213: -87062440033449524
+    second: LobbuButtonTest_Sheet 1_2
+  - first:
+      213: 6887947334167988674
+    second: LobbuButtonTest_Sheet 1_3
+  - first:
+      213: -1750154450574674872
+    second: LobbuButtonTest_Sheet 1_4
+  - first:
+      213: 6225337626250359304
+    second: LobbuButtonTest_Sheet 1_5
+  - first:
+      213: -6532557987893801978
+    second: LobbuButtonTest_Sheet 1_6
+  - first:
+      213: 6331587624408519485
+    second: LobbuButtonTest_Sheet 1_7
+  - first:
+      213: 8384389243646971245
+    second: LobbuButtonTest_Sheet 1_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1542
+        width: 274
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 30, z: 34, w: 30}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2fe739942cabe49adae637be8a97f0
+      internalID: -2009465918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1530
+        width: 314
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 44, y: 0, z: 44, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e428d9c6876fc3b4d8895b2f0b5d9146
+      internalID: 1137785935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1440
+        width: 422
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 44, y: 34, z: 44, w: 34}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dcf9fd70508d0418be9a354aa53c17
+      internalID: -209571695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1439
+        width: 70
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e328ab56ea833054f95b598cd99dfc6c
+      internalID: 1488495638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1223
+        width: 554
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 40, z: 40, w: 40}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee03df19702bc942884e8ca1e7a0600
+      internalID: 2103246062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 951
+        width: 543
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f12ae2c6974f0d47910c30f5aed1c6f
+      internalID: 430608118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 676
+        width: 543
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d9e497493601247801df3bf8c1f0c5
+      internalID: 828813040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 394
+        width: 543
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2d648defcd8f344aaf0fde8994687d
+      internalID: 1816249050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 11
+        width: 597
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 126, y: 162, z: 126, w: 50}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4142a206c7e086a468bd4f5dc3ad5535
+      internalID: 1414842170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fa682b2bd7744fe41864fcb331c12193
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LobbuButtonTest_Sheet_0: -2009465918
+      LobbuButtonTest_Sheet_1: 1137785935
+      LobbuButtonTest_Sheet_2: -209571695
+      LobbuButtonTest_Sheet_3: 1488495638
+      LobbuButtonTest_Sheet_4: 2103246062
+      LobbuButtonTest_Sheet_5: 430608118
+      LobbuButtonTest_Sheet_6: 828813040
+      LobbuButtonTest_Sheet_7: 1816249050
+      LobbuButtonTest_Sheet_8: 1414842170
+      LobbuButtonTest_Sheet_9: -1581991324
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
