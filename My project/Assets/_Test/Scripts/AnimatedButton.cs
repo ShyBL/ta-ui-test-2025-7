@@ -58,6 +58,8 @@ namespace _Test.Scripts
             _isPointerDown = true;
             _pressStartTime = Time.time;
             _shouldPopUp = false;
+            
+            buttonImage.sprite = pressedSprite;
             StartPressDownTween();
             buttonPressed.Invoke(eventData);
         }
@@ -96,8 +98,6 @@ namespace _Test.Scripts
                 {
                     _shouldPopUp = false;
                     
-                    buttonImage.sprite = pressedSprite;
-                    
                     StartPopUpTween();
                 }
                 else
@@ -112,12 +112,15 @@ namespace _Test.Scripts
         {
             _currentAnimation?.Kill();
             _currentAnimation = DOTween.Sequence();
+            
+            buttonImage.sprite = normalSprite;
+            
             _currentAnimation.Append(_rectTransform.DOAnchorPosY(_originalPosition.y, popAnimationDuration)
                 .SetEase(popEase));
+            
             _currentAnimation.OnComplete(() =>
             {
                 buttonImage.color = Color.white;
-                buttonImage.sprite = normalSprite;
             });
         }
 

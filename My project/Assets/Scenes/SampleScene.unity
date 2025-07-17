@@ -794,10 +794,10 @@ MonoBehaviour:
   buttonImage: {fileID: 243274388}
   holdThreshold: 10
   pressAnimationDistance: 10
-  pressAnimationDuration: 0.1
+  pressAnimationDuration: 0.5
   pressEase: 6
-  popAnimationDistance: 20
-  popAnimationDuration: 0.3
+  popAnimationDistance: 10
+  popAnimationDuration: 1
   popEase: 30
   buttonPressed:
     m_PersistentCalls:
@@ -2259,7 +2259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1169755407
 SpriteRenderer:
   m_ObjectHideFlags: 0
