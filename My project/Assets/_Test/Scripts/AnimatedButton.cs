@@ -2,11 +2,13 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace _Test
+namespace _Test.Scripts
 {
+    [System.Serializable]
+    public class PointerDataUnityEvent : UnityEvent<BaseEventData> { }
+    
     [RequireComponent(typeof(RectTransform))]
     public class AnimatedButton : MonoBehaviour
     {
@@ -31,7 +33,7 @@ namespace _Test
         [SerializeField] private Ease popEase = Ease.OutBounce;
         
         [Header("Button Events")]
-        public UnityEvent buttonPressed;
+        public PointerDataUnityEvent buttonPressed;
         public UnityEvent buttonHeld;
         
         private RectTransform _rectTransform;
@@ -57,7 +59,7 @@ namespace _Test
             _pressStartTime = Time.time;
             _shouldPopUp = false;
             StartPressDownTween();
-            buttonPressed.Invoke();
+            buttonPressed.Invoke(eventData);
         }
 
         // Called by EventTrigger Component
@@ -67,6 +69,7 @@ namespace _Test
             if (!_isPointerDown || _isAutoSpin) return;
             _isPointerDown = false;
             var startTime = Time.time - _pressStartTime;
+            
             //_shouldPopUp = !(startTime >= holdThreshold);
             if (startTime >= holdThreshold)
             {
