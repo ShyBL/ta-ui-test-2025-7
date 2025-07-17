@@ -17,13 +17,14 @@ namespace _Test.Scripts
         {
             if (particleSystem == null || worldCamera == null) return;
             
-            Vector2 screenPos = Vector2.zero;
+            var screenPos = Vector2.zero;
+            
             if (eventData is PointerEventData pointerData)
             {
                 screenPos = pointerData.position;
             }
             
-            Vector3 worldPos = worldCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, 0));
+            var worldPos = worldCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y));
             
             particleSystem.transform.position = worldPos;
             particleSystem.Play();
