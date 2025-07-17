@@ -41,7 +41,7 @@ namespace _Test.Scripts
         private Sequence _currentAnimation;
         private float _pressStartTime;
         private bool _isPointerDown = false;
-        private bool _shouldPopUp = false;
+        private bool _shouldPopUp = true;
         private bool _isAutoSpin = false;
         
         private void Start()
@@ -74,7 +74,6 @@ namespace _Test.Scripts
             if (startTime >= holdThreshold)
             {
                 _shouldPopUp = false;
-                buttonHeld.Invoke();
             }
             else
             {
@@ -89,6 +88,7 @@ namespace _Test.Scripts
             _currentAnimation = DOTween.Sequence();
             _currentAnimation.Append(_rectTransform.DOAnchorPosY(_originalPosition.y - pressAnimationDistance,
                 pressAnimationDuration).SetEase(pressEase));
+            
             _currentAnimation.OnComplete(() =>
             {
                 // After press down finishes, check what to do next
@@ -103,6 +103,7 @@ namespace _Test.Scripts
                 else
                 {
                     buttonImage.sprite = autoSpinSprite;
+                    buttonHeld.Invoke();
                 }
             });
         }
@@ -117,9 +118,6 @@ namespace _Test.Scripts
             {
                 buttonImage.color = Color.white;
                 buttonImage.sprite = normalSprite;
-                if (_isAutoSpin)
-                {
-                }
             });
         }
 
