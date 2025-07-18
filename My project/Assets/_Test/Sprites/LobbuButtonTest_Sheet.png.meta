@@ -3,32 +3,44 @@ guid: a0a97e12db808ca45bc73a1abe7f8f35
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5202916320218799741
-    second: LobbuButtonTest_Sheet 1_0
+      213: -8083913729649838297
+    second: LobbuButtonTest_Sheet_0
   - first:
-      213: -4769203430080102039
-    second: LobbuButtonTest_Sheet 1_1
+      213: -7680301855388653074
+    second: LobbuButtonTest_Sheet_1
   - first:
-      213: -87062440033449524
-    second: LobbuButtonTest_Sheet 1_2
+      213: 7945356285029512433
+    second: LobbuButtonTest_Sheet_2
   - first:
-      213: 6887947334167988674
-    second: LobbuButtonTest_Sheet 1_3
+      213: 3527851168750525055
+    second: LobbuButtonTest_Sheet_3
   - first:
-      213: -1750154450574674872
-    second: LobbuButtonTest_Sheet 1_4
+      213: -1688047883652081439
+    second: LobbuButtonTest_Sheet_4
   - first:
-      213: 6225337626250359304
-    second: LobbuButtonTest_Sheet 1_5
+      213: 8916018765234730560
+    second: LobbuButtonTest_Sheet_5
   - first:
-      213: -6532557987893801978
-    second: LobbuButtonTest_Sheet 1_6
+      213: -7778669910036364919
+    second: LobbuButtonTest_Sheet_6
   - first:
-      213: 6331587624408519485
-    second: LobbuButtonTest_Sheet 1_7
+      213: 8157014790444420558
+    second: LobbuButtonTest_Sheet_7
   - first:
-      213: 8384389243646971245
-    second: LobbuButtonTest_Sheet 1_8
+      213: 5928325883554673277
+    second: LobbuButtonTest_Sheet_8
+  - first:
+      213: -7639265317017048399
+    second: LobbuButtonTest_Sheet_9
+  - first:
+      213: 6789928947612819603
+    second: LobbuButtonTest_Sheet_10
+  - first:
+      213: 1763956400005327091
+    second: LobbuButtonTest_Sheet_11
+  - first:
+      213: -6658380475526550170
+    second: LobbuButtonTest_Sheet_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,19 +140,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 1542
+        y: 796
         width: 274
         height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 30, z: 34, w: 30}
+      border: {x: 5, y: 0, z: 38, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1b2fe739942cabe49adae637be8a97f0
-      internalID: -2009465918
+      spriteID: 72771551b4b20df80800000000000000
+      internalID: -8083913729649838297
       vertices: []
       indices: 
       edges: []
@@ -150,7 +162,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 296
-        y: 1530
+        y: 784
         width: 314
         height: 80
       alignment: 0
@@ -159,10 +171,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e428d9c6876fc3b4d8895b2f0b5d9146
-      internalID: 1137785935
+      spriteID: ee929cd87261a6590800000000000000
+      internalID: -7680301855388653074
       vertices: []
       indices: 
       edges: []
@@ -171,20 +183,20 @@ TextureImporter:
       name: LobbuButtonTest_Sheet_2
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1440
+        x: 620
+        y: 784
         width: 422
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 44, y: 34, z: 44, w: 34}
+      border: {x: 44, y: 38, z: 44, w: 38}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b6dcf9fd70508d0418be9a354aa53c17
-      internalID: -209571695
+      spriteID: 1f4f917e173934e60800000000000000
+      internalID: 7945356285029512433
       vertices: []
       indices: 
       edges: []
@@ -193,8 +205,8 @@ TextureImporter:
       name: LobbuButtonTest_Sheet_3
       rect:
         serializedVersion: 2
-        x: 438
-        y: 1439
+        x: 1052
+        y: 783
         width: 70
         height: 81
       alignment: 0
@@ -203,10 +215,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e328ab56ea833054f95b598cd99dfc6c
-      internalID: 1488495638
+      spriteID: f7a52d552f175f030800000000000000
+      internalID: 3527851168750525055
       vertices: []
       indices: 
       edges: []
@@ -215,42 +227,20 @@ TextureImporter:
       name: LobbuButtonTest_Sheet_4
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1223
-        width: 554
-        height: 206
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 40, y: 40, z: 40, w: 40}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ee03df19702bc942884e8ca1e7a0600
-      internalID: 2103246062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LobbuButtonTest_Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 951
-        width: 543
-        height: 252
+        x: 1132
+        y: 699
+        width: 150
+        height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6f12ae2c6974f0d47910c30f5aed1c6f
-      internalID: 430608118
+      spriteID: 1e8511bb469d298e0800000000000000
+      internalID: -1688047883652081439
       vertices: []
       indices: 
       edges: []
@@ -259,20 +249,20 @@ TextureImporter:
       name: LobbuButtonTest_Sheet_6
       rect:
         serializedVersion: 2
-        x: 27
-        y: 676
-        width: 543
-        height: 238
+        x: 1292
+        y: 658
+        width: 554
+        height: 206
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 44, y: 44, z: 44, w: 44}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 81d9e497493601247801df3bf8c1f0c5
-      internalID: 828813040
+      spriteID: 98143431eec9c0490800000000000000
+      internalID: -7778669910036364919
       vertices: []
       indices: 
       edges: []
@@ -281,8 +271,8 @@ TextureImporter:
       name: LobbuButtonTest_Sheet_7
       rect:
         serializedVersion: 2
-        x: 27
-        y: 394
+        x: 6
+        y: 410
         width: 543
         height: 238
       alignment: 0
@@ -291,10 +281,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8b2d648defcd8f344aaf0fde8994687d
-      internalID: 1816249050
+      spriteID: ecd0c04fbb9833170800000000000000
+      internalID: 8157014790444420558
       vertices: []
       indices: 
       edges: []
@@ -303,20 +293,108 @@ TextureImporter:
       name: LobbuButtonTest_Sheet_8
       rect:
         serializedVersion: 2
-        x: 7
-        y: 11
+        x: 559
+        y: 396
+        width: 543
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72b7024bf4a54250800000000000000
+      internalID: 5928325883554673277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 386
+        width: 543
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baac323ba0ebf590800000000000000
+      internalID: -7639265317017048399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 111
+        width: 543
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390aa9c376caa3e50800000000000000
+      internalID: 6789928947612819603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 111
+        width: 543
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8289dfff4da7810800000000000000
+      internalID: 1763956400005327091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobbuButtonTest_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 10
         width: 597
         height: 354
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 126, y: 162, z: 126, w: 50}
+      border: {x: 124, y: 164, z: 124, w: 56}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4142a206c7e086a468bd4f5dc3ad5535
-      internalID: 1414842170
+      spriteID: 66de7d03c3ea893a0800000000000000
+      internalID: -6658380475526550170
       vertices: []
       indices: 
       edges: []
@@ -325,7 +403,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fa682b2bd7744fe41864fcb331c12193
+    spriteID: 19b0a130ea3ca2047bb60acfffaa5618
     internalID: 0
     vertices: []
     indices: 
@@ -335,16 +413,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LobbuButtonTest_Sheet_0: -2009465918
-      LobbuButtonTest_Sheet_1: 1137785935
-      LobbuButtonTest_Sheet_2: -209571695
-      LobbuButtonTest_Sheet_3: 1488495638
-      LobbuButtonTest_Sheet_4: 2103246062
-      LobbuButtonTest_Sheet_5: 430608118
-      LobbuButtonTest_Sheet_6: 828813040
-      LobbuButtonTest_Sheet_7: 1816249050
-      LobbuButtonTest_Sheet_8: 1414842170
-      LobbuButtonTest_Sheet_9: -1581991324
+      LobbuButtonTest_Sheet_0: -8083913729649838297
+      LobbuButtonTest_Sheet_1: -7680301855388653074
+      LobbuButtonTest_Sheet_10: 6789928947612819603
+      LobbuButtonTest_Sheet_11: 1763956400005327091
+      LobbuButtonTest_Sheet_12: -6658380475526550170
+      LobbuButtonTest_Sheet_2: 7945356285029512433
+      LobbuButtonTest_Sheet_3: 3527851168750525055
+      LobbuButtonTest_Sheet_4: -1688047883652081439
+      LobbuButtonTest_Sheet_5: 8916018765234730560
+      LobbuButtonTest_Sheet_6: -7778669910036364919
+      LobbuButtonTest_Sheet_7: 8157014790444420558
+      LobbuButtonTest_Sheet_8: 5928325883554673277
+      LobbuButtonTest_Sheet_9: -7639265317017048399
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
