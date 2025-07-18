@@ -348,7 +348,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.129
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -682,7 +682,9 @@ MonoBehaviour:
   refillsText: {fileID: 1318286812}
   button: {fileID: 243274385}
   buttonImage: {fileID: 243274388}
-  energyCost: 10
+  energyCost: 25
+  sliderAnimationDuration: 0.3
+  sliderEaseType: 27
 --- !u!4 &217700571
 Transform:
   m_ObjectHideFlags: 0
@@ -2304,7 +2306,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8345172770787448145, guid: fe35d002bb041c94b9a069ed09e1c1d1, type: 3}
+  m_Sprite: {fileID: -2628349000341187699, guid: d0bea7e7403ff474e9e13eb5d72ae634, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3998,6 +4000,10 @@ PrefabInstance:
     - target: {fileID: 5742534006260782714, guid: a4313650d56d9da48a95b21ea0e523e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -70.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 5825710159844421781, guid: a4313650d56d9da48a95b21ea0e523e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 33.07993
       objectReference: {fileID: 0}
     - target: {fileID: 6302180367346738138, guid: a4313650d56d9da48a95b21ea0e523e3, type: 3}
       propertyPath: m_LocalRotation.w

@@ -2,6 +2,7 @@ using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 namespace _Test.Scripts
 {
@@ -17,63 +18,43 @@ namespace _Test.Scripts
         
         [Header("Settings")]
         [SerializeField] private float energyCost = 10f;
+        [SerializeField] private float sliderAnimationDuration = 0.3f;
+        [SerializeField] private Ease sliderEaseType = Ease.OutBack;
     
-        private float _currentEnergy;
+        private float _currentEnergy = 999f;
         private int _currentRefills = 999;
         private const float MaxEnergy = 999f;
         private bool _isAutoSpinning = false;
+        private bool _isSliderAnimating = false;
+        private Tween _currentSliderTween;
 
         private void Start()
         {
-            // Set initial energy to 20%
-            _currentEnergy = MaxEnergy * 0.2f;
-        
-            // Setup slider
-            energySlider.minValue = 0f;
-            energySlider.maxValue = 1f;
-            energySlider.value = 0.2f;
             energySlider.onValueChanged.AddListener(OnSliderChanged);
-        
             UpdateUI();
         }
-
-        private void OnSliderChanged(float value)
-        {
-            _currentEnergy = value * MaxEnergy;
-            UpdateUI();
-        }
-
-        private void UpdateUI()
-        {
-            currentEnergyText.text = ((int)_currentEnergy).ToString();
-            maxEnergyText.text = MaxEnergy.ToString(CultureInfo.InvariantCulture);
-            refillsText.text = _currentRefills.ToString();
         
-            energySlider.value = _currentEnergy / MaxEnergy;
-
-            UpdateEnergyState();
-        }
-
         private void Update()
         {
             switch (_isAutoSpinning)
             {
                 case true when _currentEnergy >= energyCost:
                     _currentEnergy -= energyCost * Time.deltaTime;
-                    UpdateUI();
+                    _currentEnergy = Mathf.Max(_currentEnergy, 0f);
+                    TweenEnergySlider();
                     break;
                 case true when _currentEnergy < energyCost:
                     _isAutoSpinning = false;
                     break;
             }
         }
-    
+        
         public void WasteEnergy()
         {
             if (_currentEnergy >= energyCost)
             {
                 _currentEnergy -= energyCost;
-                UpdateUI();
+                TweenEnergySlider();
             }
         }
     
@@ -88,8 +69,45 @@ namespace _Test.Scripts
             {
                 _currentRefills--;
                 _currentEnergy = MaxEnergy;
-                UpdateUI();
+                TweenEnergySlider();
             }
+        }
+        
+        private void TweenEnergySlider()
+        {
+            _currentSliderTween?.Kill();
+            
+            var targetValue = _currentEnergy / MaxEnergy;
+            
+            // Temporarily disable the slider change listener to prevent conflicts
+            _isSliderAnimating = true;
+
+            _currentSliderTween = energySlider.DOValue(targetValue, sliderAnimationDuration).SetEase(sliderEaseType);
+            _currentSliderTween.OnUpdate(UpdateEnergyText);// Update text during animation for smooth number changes
+            _currentSliderTween.OnComplete(() => {
+                _isSliderAnimating = false;
+                UpdateUI();
+            });
+        }
+        
+        private void OnSliderChanged(float value)
+        {
+            if (_isSliderAnimating) return;
+            _currentEnergy = value * MaxEnergy;
+            UpdateUI();
+        }
+
+        private void UpdateUI()
+        {
+            UpdateEnergyText();
+            refillsText.text = _currentRefills.ToString();
+            UpdateEnergyState();
+        }
+        
+        private void UpdateEnergyText()
+        {
+            currentEnergyText.text = ((int)_currentEnergy).ToString();
+            maxEnergyText.text = MaxEnergy.ToString(CultureInfo.InvariantCulture);
         }
     
         private void UpdateEnergyState()
@@ -100,6 +118,11 @@ namespace _Test.Scripts
 
             // Make button look not interactive
             buttonImage.color = hasEnoughEnergy ? Color.white : Color.gray;
+        }
+        
+        private void OnDestroy()
+        {
+            _currentSliderTween?.Kill();
         }
     }
 }
