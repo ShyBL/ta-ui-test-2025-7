@@ -159,10 +159,4 @@ public class WelcomeWindow : EditorWindow
         rect.height = 1;
         EditorGUI.DrawRect(rect, EditorGUIUtility.isProSkin ? Color.gray : Color.gray);
     }
-
-    private void OnDestroy()
-    {
-        // Reset the session state when window is closed so it can be shown again next time
-        SessionState.SetBool("WelcomeWindowShown", false);
-    }
 }
